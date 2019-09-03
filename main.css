@@ -10,8 +10,10 @@ body {
   display: flex;
 }
 .logo_container {
-  width: 75px;
-  height: 75px;
+  width: 100%;
+  /* text-align: center; */
+  color: #fff;
+  padding: 20px;
 }
 .logo {
   width: 100%;
@@ -117,6 +119,7 @@ body {
   /* border: 0; */
   border: 1px solid #ddd;
   outline: none;
+  position: relative;
 }
 .search_container {
   display: flex;
@@ -157,11 +160,15 @@ body {
   padding: 15px;
   height: 80px;
   width: 100px;
+  font-size: 12px;
+  color: #959492;
 }
 .table_head {
   text-transform: uppercase;
   border: 1px solid #ddd;
   font-weight: lighter;
+  color: #959492;
+  font-size: 12px;
 }
 .event_day {
   background: #fff3d4;
@@ -171,7 +178,14 @@ body {
   color: #fff;
   font-size: 12px;
   font-weight: lighter;
+  padding: 5px;
 }
 .el {
   flex: 1 100%;
+}
+.search_icon {
+  position: absolute;
+  right: 195px;
+  top: 202px;
+  color: #eee;
 }

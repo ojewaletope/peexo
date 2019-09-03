@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome/css/font-awesome.min.css"
     />
+    <!-- <script src="https://use.fontawesome.com/c5966f277e.js"></script> -->
     <link rel="stylesheet" href="main.css" />
     <title>Peexo</title>
   </head>
@@ -23,7 +28,7 @@
           <ul class="nav_list">
             <li class="list_item">
               <a href="#" class="nav_link"
-                ><i class="fa fa-chart-bar"></i>
+                ><i class="fa fa-bar-chart" aria-hidden="true"></i>
                 <span class="link_title">Dashboard</span></a
               >
             </li>
@@ -41,8 +46,8 @@
             </li>
             <li class="list_item active">
               <a href="#" class="nav_link link_active">
-                <i class="fa fa-calendar-alt" aria-hidden="true"></i
-                ><span class="link_title">Availability</span></a
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <span class="link_title">Availability</span></a
               >
             </li>
             <li class="list_item">
@@ -59,8 +64,8 @@
             </li>
             <li class="list_item">
               <a href="#" class="nav_link">
-                <i class="fa fa-picture" aria-hidden="true"></i
-                ><span class="link_title">Albums</span></a
+                <i class="fa fa-picture-o"></i>
+                <span class="link_title">Albums</span></a
               >
             </li>
             <li class="list_item">
@@ -91,19 +96,19 @@
               </li>
               <li class="header_list_item">Find a photographer</li>
               <li class="header_list_item">
-                <i class="far fa-file-alt"></i>
+                <i class="fa fa-file-alt"></i>
               </li>
               <li class="header_list_item">
-                <i class="far fa-bell"></i>
+                <i class="fa fa-bell"></i>
               </li>
               <li class="header_list_item">
-                <i class="far fa-envelope"></i>
+                <i class="fa fa-envelope"></i>
               </li>
               <li class="header_list_item last">
                 <div class="image_container">
                   <img src="assets/tope.png" class="user_img" alt="user" />
                 </div>
-                <span>{{ name }} <i class="fas fa-angle-down"></i></span>
+                <span>{{ name }} <i class="fa fa-angle-down"></i></span>
               </li>
               <li class="header_list_item"></li>
             </ul>
@@ -114,11 +119,11 @@
                 <h3>Availability</h3>
                 <div class="view_wrapper">
                   <div class="calendar_view_text">
-                    <i class="far fa-calendar-alt"></i
-                    ><span class="calendar_span">Calendar View</span>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <span class="calendar_span">Calendar View</span>
                   </div>
                   <div class="calendar_view_text">
-                    <i class="fas fa-bars"></i
+                    <i class="fa fa-bars"></i
                     ><span class="calendar_span">List View</span>
                   </div>
                 </div>
@@ -126,13 +131,14 @@
               <div class="search_container">
                 <div class="form_wrapper">
                   <input type="text" class="form_input" placeholder="Search" />
+                  <i class="fa fa-search search_icon"></i>
                 </div>
                 <button class="form_btn">+ Add Schedule</button>
               </div>
             </div>
             <div class="calendar_control">
-              <span><i class="fas fa-angle-left"></i></span>
-              <span><i class="fas fa-angle-right"></i></span>
+              <span><i class="fa fa-angle-left"></i></span>
+              <span><i class="fa fa-angle-right"></i></span>
               <span>September</span>
               <span class="today_span">Today</span>
             </div>
